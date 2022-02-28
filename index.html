@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar tailwindcss</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        /* *{
+            border: 1px solid red;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-4 w-full bg-slate-100 shadow-lg fixed top-0">
+        <div class="flex flex-wrap justify-between md:justify-around items-center mx-5 md:mx-0">
+            <a class="flex items-center" href="index.html"><span class="lnr lnr-laptop text-3xl mr-3"></span>
+                <p class="text-xl">YSRNDEV.COM</p>
+            </a>
+            <div class="cursor-pointer md:hidden block ">
+                <span class="lnr lnr-menu text-2xl" id="menu-button-open"></span>
+                <span class="lnr lnr-cross text-2xl hidden" id="menu-button-close"></span>
+            </div>
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                <ul class="text-xl md:text-base text-center text-gray-700 md:flex md:justify-between py-2 md:py-0">
+                    <li class="my-8 md:my-0 mx-4 block hover:text-red-400"><a href="#features">Features</a></li>
+                    <li class="my-8 md:my-0 mx-4 block hover:text-red-400"><a href="#galery">Galery</a></li>
+                    <li class="my-8 md:my-0 mx-4 block hover:text-red-400"><a href="#about">About</a></li>
+                    <li class="my-8 md:my-0 mx-4 block hover:text-red-400"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto p-4 my-4 mt-28 font-sans max-w-md md:max-w-xl">
+        <h1 class="text-slate-900 text-4xl text-center mb-2">Ahmad <span class="text-red-300">Yusron</span></h1>
+        <img src="https://source.unsplash.com/600x600?laptop" class="w-full rounded-lg shadow-lg max-w-md mx-auto">
+        <h2 class="text-2xl text-center text-slate-900">Sistem Informasi Monitoring Ekstrakurikuler</h2>
+        <p class="text-base text-slate-600 text-center">By <span class="text-slate-700 font-bold">Administrator</span>,
+            20 Januari
+            2022</p>
+        <p class="mt-3 text-slate-700 text-justify max-w-md mx-auto">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit.
+            Necessitatibus iure,
+            veritatis modi
+            optio est ad
+            expedita temporibus laboriosam enim quos nesciunt officiis neque itaque facere? Libero non fuga repudiandae
+            necessitatibus nesciunt, vel error, dolores dolorum eum illo doloribus, quas consequuntur.</p>
+    </div>
+    <div class="flex justify-center mb-52">
+        <a href="#"
+            class="bg-red-600 text-white p-2 shadow-lg rounded-lg font-semibold active:ring-4 active:ring-red-200">Subscribe
+            Disini</a>
+    </div>
+
+    <!-- Galery -->
+    <div class="mb-10" id="galery">
+        <h2 class="text-2xl md:text-4xl xl:text-5xl text-center font-bold font-semibold">Galeri
+            Ekstrakuriler</h2>
+        <div class="h-0.5 w-60 bg-slate-900 rounded-full max-w-md mx-auto"></div>
+    </div>
+    <div class="p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 md:p-4 xl:p-6">
+        <h2
+            class="h-15 text-xl font-semibold text-slate-700 text-center flex justify-center items-center md:col-start-4 md:row-start-2 xl:col-start-4 xl:row-start-1">
+            Welcome to
+            SIME</h2>
+        <div
+            class="h-15 text-lg font-bold text-slate-500 text-center flex justify-center items-center md:col-start-1 md:row-start-2 xl:col-start-1 xl:row-start-3">
+            @ahmadyusronh
+        </div>
+        <div
+            class=" h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group  hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group  hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-1 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+        <div
+            class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group hover:scale-95 transition-all duration-700">
+            <div
+                class="w-full h-full bg-[url('https://source.unsplash.com/500x500?laptop')] bg-cover group-hover:scale-125 group-hover:rotate-12 transition-all duration-700">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-slate-900 p-4">
+        <p class="text-white text-center">&copy; 2022 <a class="text-red-400" href="https://github.com/ysrndev"
+                target="_blank">YsrnDev.com</a>. Made with ❤
+            by Ahmad Yusron.</p>
+    </div>
+
+    <div onclick="topFunction()" class=" fixed bottom-3 right-3 z-99 cursor-pointer" id="btnTop" title="Go to top">
+        <span class="lnr lnr-arrow-up-circle text-4xl md:text-5xl text-slate-900 hover:text-red-500"></span>
+    </div>
+    <script>
+        // Toggle Hamburger Icon
+        const button1 = document.querySelector('#menu-button-open');
+        const button2 = document.querySelector('#menu-button-close');
+        const menu = document.querySelector('#menu');
+
+        button1.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            button1.classList.add('hidden');
+            button2.classList.remove('hidden');
+        });
+
+        button2.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            button1.classList.remove('hidden');
+            button2.classList.add('hidden');
+        });
+
+        // Scroll to Top Button
+        const btnTop = document.querySelector("#btnTop");
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTop.style.display = "block";
+            } else {
+                btnTop.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
