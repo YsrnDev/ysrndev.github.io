@@ -1,2 +1,3 @@
 # ysrndev.github.io
-Tailwindcss
+First website with framework css TailwindCSS
+https://tailwindcss.com
