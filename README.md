@@ -1,1 +1,2 @@
-# Official Website [YsrnDev.Site](https://ysrndev.site)
+# Official Website [ysrndev.github.io](https://ysrndev.github.io)
+https://ysrndev.github.io
